@@ -1,6 +1,10 @@
 body {
     margin: 0px;
     padding: 0px;
+    background-color: var(--fundo);
+    background-size: 64px 100%;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+    background-position: center;
 }
 
 :root {
@@ -16,7 +20,7 @@ body {
     padding: 6px 24px;  
     box-sizing: content-box;  
     background-color: var(--fundo);
-    border-bottom: 1px solid white;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.055);
 }
 
 .titulo {
