@@ -40,3 +40,7 @@ body {
 .nav a:hover {
     color: var(--dourado);
 }
+
+.nav a.active {
+    color: var(--dourado);
+}

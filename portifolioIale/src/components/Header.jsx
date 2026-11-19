@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function Header() {
     return (
@@ -7,10 +7,10 @@ function Header() {
                 <h1 className="titulo">IALE LELES</h1>
 
                 <nav className="nav">
-                    <Link to="/">PERFIL</Link>
-                    <Link to="/projetos">PROJETOS</Link>
-                    <Link to="/experiencias">EXPERIÊNCIAS</Link>
-                    <Link to="/contato">CONTATO</Link>
+                    <NavLink to="/">PERFIL</NavLink>
+                    <NavLink to="/projetos">PROJETOS</NavLink>
+                    <NavLink to="/experiencias">EXPERIÊNCIAS</NavLink>
+                    <NavLink to="/contato">CONTATO</NavLink>
                 </nav>
             </header>
         </>
