@@ -1,0 +1,42 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --dourado: #C8A96B;
+    --dourado-claro: #E3C98F;
+    --fundo: #0B0D10;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 24px;  
+    box-sizing: content-box;  
+    background-color: var(--fundo);
+    border-bottom: 1px solid white;
+}
+
+.titulo {
+    font-family: 'Bodoni Moda', Georgia, serif;
+    font-weight: 500;
+    font-style: italic;
+    color: var(--dourado);
+}
+
+.nav {
+    display: flex;
+    gap: 25px;
+    font-family: 'IBM Plex Mono', ui-monospace, monospace;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav a:hover {
+    color: var(--dourado);
+}
