@@ -1,5 +1,4 @@
 import Hexagono from "./Hexagono";
-import { useState } from "react";
 
 function CirculoArsenal() {
 
