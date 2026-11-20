@@ -195,6 +195,8 @@ body {
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     display: grid;
     place-items: center;
+    color: white;
+    font-size: 50px;
 }
 
 .topo      { left: 250px; top: 160px; }
@@ -211,4 +213,5 @@ body {
 
 .hexagono:hover {
     padding: 2px;
+    background-color: #191D22;
 }
