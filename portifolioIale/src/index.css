@@ -361,3 +361,50 @@ body {
     margin-left: 16px;
     margin-right: 16px;
 }
+
+.footer {
+    background-color: var(--fundo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo {
+    flex: 1;
+}
+
+.footer {
+    background-color: var(--fundo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin-top: 10px;
+    color: white;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    border-top: 3px solid rgba(255, 255, 255, 0.055);
+}
+
+.footer p {
+    margin: 0;
+}
+
+.conteudo {
+    flex: 1;
+    padding-bottom: 40px;
+}
