@@ -1,9 +1,14 @@
+import Cracha from "../components/Cracha";
+
 function Home() {
     return (
         <>
-            <h1>Iale Leles</h1>
-            <p>Sobre mim</p>
-        </>
+            <h1>Perfil</h1>
+            
+            <main className="principal">
+                <Cracha />
+            </main>
+        </> 
     )
 }
 
