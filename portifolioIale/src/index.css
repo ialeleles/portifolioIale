@@ -8,8 +8,8 @@ body {
 }
 
 :root {
-    --dourado: #C8A96B;
-    --dourado-claro: #E3C98F;
+    --vermelho-vivo: #E60000;
+    --vermelho-escuro: #8B0000;
     --fundo: #0B0D10;
 }
 
@@ -27,7 +27,7 @@ body {
     font-family: 'Bodoni Moda', Georgia, serif;
     font-weight: 500;
     font-style: italic;
-    color: var(--dourado);
+    color: var(--vermelho-vivo);
 }
 
 .nav {
@@ -42,11 +42,11 @@ body {
 }
 
 .nav a:hover {
-    color: var(--dourado);
+    color: var(--vermelho-escuro);
 }
 
 .nav a.active {
-    color: var(--dourado);
+    color: var(--vermelho-vivo);
 }
 
 .cracha-foto {
@@ -105,14 +105,14 @@ body {
 }
 
 .cracha-info {
-    font-size: 12px;
+    font-size: 16px;
     letter-spacing: 1px;
     color: #D1D5DB;
     margin: 0;
 }
 
 .cracha-titulo-info {
-    color: var(--dourado);
+    color: var(--vermelho-vivo);
 }
 
 .cracha-footer {
@@ -126,14 +126,23 @@ body {
 
 .cracha-footer p {
     margin: 0;
-    color: var(--dourado);
     font-size: 11px;
     letter-spacing: 2px;
 }
 
 .principal {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
+    margin-left: 40px;
     padding: 60px 24px; 
+}
+
+.titulo-home {
+    font-family: 'Bodoni Moda', Georgia, serif;
+    font-weight: bolder;
+    font-style: italic;
+    color: rgba(192, 192, 192);
+    margin-left: 70px;
+    margin-top: 50px;
 }
