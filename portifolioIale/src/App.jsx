@@ -3,6 +3,7 @@ import Home from './pages/Home'
 import { Routes, Route } from 'react-router-dom'
 import './App.css'
 import Header from './components/Header'
+import Arsenal from './pages/Arsenal'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
             
             <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path='/arsenal' element={<Arsenal />} />
             </Routes>
         </>
     )

@@ -10,6 +10,7 @@ body {
 :root {
     --vermelho-vivo: #E60000;
     --vermelho-escuro: #8B0000;
+    --marrom: #181412;
     --fundo: #0B0D10;
 }
 
@@ -138,11 +139,76 @@ body {
     padding: 60px 24px; 
 }
 
-.titulo-home {
+.titulo-pages {
     font-family: 'Bodoni Moda', Georgia, serif;
     font-weight: bolder;
     font-style: italic;
     color: rgba(192, 192, 192);
     margin-left: 70px;
     margin-top: 50px;
+}
+
+.circulo-container {
+    display: flex;
+    justify-content: center;
+}
+
+.circulo {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background-color: var(--vermelho-escuro);
+}
+
+.anel-maior {
+    position: absolute;
+    inset: 50px;
+    border-radius: 50%;
+    border: 3px solid var(--fundo);
+}
+
+.anel-menor {
+    position: absolute;
+    inset: 120px;
+    border-radius: 50%;
+    border: 2px solid var(--fundo);
+}
+
+.hexagono {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: var(--w);
+    height: var(--h);
+    background-color: var(--marrom);
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    display: grid;
+    place-items: center;
+}
+
+.hexagono {
+    position: absolute;
+    width: 100px;
+    height: 87px;
+    background-color: var(--marrom);
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    display: grid;
+    place-items: center;
+}
+
+.topo      { left: 250px; top: 160px; }
+.topo-cima { left: 250px; top: 63px;  }
+.centro    { left: 250px; top: 257px; }
+.e-centro  { left: 417px; top: 257px; }
+.d-centro  { left: 83px;  top: 257px; }
+.baixo     { left: 250px; top: 354px; }
+.m-baixo   { left: 250px; top: 450px; }
+.esq-cima  { left: 166px; top: 208px; }
+.esq-baixo { left: 166px; top: 306px; }
+.dir-cima  { left: 334px; top: 208px; }
+.dir-baixo { left: 334px; top: 306px; }
+
+.hexagono:hover {
+    padding: 2px;
 }
