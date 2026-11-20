@@ -332,3 +332,32 @@ body {
     background-color: rgb(192, 192, 192, 0.5);
     border-radius: 5px;
 }
+
+.card-xp {
+    height: 120px;
+    background-color: #111418;
+    border: 3px solid rgba(192, 192, 192, 0.5);
+    border-radius: 7px;
+    color: white;
+    font-family: 'IBM Plex Mono', monospace;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.card-xp:hover {
+    padding: 16px;
+    border: 3px solid white;
+}
+
+.card-xp-titulo {
+    font-size: 24px;
+    margin-left: 16px;
+}
+
+.conteudo-xp {
+    margin-left: 16px;
+    margin-right: 16px;
+}
