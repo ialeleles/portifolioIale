@@ -8,7 +8,7 @@ function Cracha() {
             <div className="cracha-conteudo">
                 <img className="cracha-foto" src="/ialeprofile.png" alt="Foto de identificação"></img>
 
-                <div cracha-informacoes>
+                <div className="cracha-informacoes">
                     <p className="cracha-titulo-info">NOME</p>
                     <p className="cracha-info">Iale Leles de Almeida</p>
 

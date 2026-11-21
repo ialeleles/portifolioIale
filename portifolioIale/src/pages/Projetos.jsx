@@ -7,9 +7,9 @@ function Projetos() {
 
             <div className="projetos-grid">
                 <CardProjeto nome="Skate Hub" imagem="/skateHub.png" descricao="Projeto Skate Hub" tags={["JavaScript", "html", "CSS"]} botao="Ir para o código" link="https://github.com/ialeleles/Skate-Hub"/>
-                <CardProjeto nome="Meepleshelf" imagem="/Print_01_meepleshelf.png" descricao="Projeto Skate Hub" tags={["JavaScript", "html", "CSS", "JSON Server"]} botao="Projeto privado"/>
-                <CardProjeto nome="Antares" imagem="/antares.png" descricao="Antares" tags={["Python", "Pygame"]} botao="Projeto privado"/>
-                <CardProjeto nome="Breaking Bet" imagem="/breaking_bet.png" descricao="Projeto Skate Hub" tags={["TypeScript", "React"]} botao="Projeto privado"/>
+                <CardProjeto nome="Meepleshelf" imagem="/Print_01_meepleshelf.png" descricao="Projeto MeepleShelf" tags={["JavaScript", "html", "CSS", "JSON Server"]} botao="Projeto privado"/>
+                <CardProjeto nome="Antares" imagem="/antares.png" descricao="Jogo Antares" tags={["Python", "Pygame"]} botao="Projeto privado"/>
+                <CardProjeto nome="Breaking Bet" imagem="/breaking_bet.png" descricao="Projeto Breaking Bet" tags={["TypeScript", "React"]} botao="Projeto privado"/>
             </div>
 
             <h1 className="titulo-pages">PROJETOS UEFN</h1>
