@@ -2,8 +2,7 @@
 
 Website de portfólio profissional com estética inspirada em Gotham: apresenta minha trajetória, projetos, experiências e formas de contato. O site é **bilíngue (português e inglês)** e responsivo.
 
-🔗 **Site publicado:** [ADICIONAR_LINK_DA_VERCEL_AQUI]
-🎨 **Wireframes (Figma):** [ADICIONAR_LINK_DO_FIGMA_AQUI]
+**Site publicado:** (https://ialeleles.vercel.app/)
 
 ## Funcionalidades
 
@@ -24,19 +23,6 @@ Website de portfólio profissional com estética inspirada em Gotham: apresenta 
 - [Devicon](https://devicon.dev/) e [React Icons](https://react-icons.github.io/react-icons/) (ícones)
 - [Oxlint](https://oxc.rs/docs/guide/usage/linter) (lint)
 - Hospedagem: [Vercel](https://vercel.com/)
-
-## Dependências
-
-| Pacote | Versão | Uso |
-|---|---|---|
-| `react` / `react-dom` | ^19.3.1 | Interface |
-| `react-router-dom` | ^7.18.6 | Rotas |
-| `react-icons` | ^5.7.0 | Ícone do WhatsApp |
-| `lucide-react` | ^1.77.0 | Biblioteca de ícones (instalada) |
-| `vite` | ^8.3.6 | Build e dev server |
-| `@vitejs/plugin-react` | ^6.1.2 | Plugin React para o Vite |
-| `oxlint` | ^1.90.0 | Lint |
-| `@types/react` / `@types/react-dom` | ^19.3.0 | Tipos (apoio do editor) |
 
 ## Estrutura de diretórios
 
@@ -85,12 +71,6 @@ npm run build     # gera a versão de produção em dist/
 npm run preview   # testa a versão de produção localmente
 npm run lint      # roda o Oxlint
 ```
-
-## Como editar o conteúdo
-
-- **Projetos:** `src/data/projetos.js` (ordem cronológica; sem `link` o botão aparece como "Projeto privado").
-- **Experiências:** `src/data/experiencias.js`.
-- **Textos da interface (PT/EN):** `src/i18n/textos.js`.
 
 ## Deploy
 
