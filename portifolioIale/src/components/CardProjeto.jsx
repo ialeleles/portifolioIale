@@ -1,28 +1,32 @@
 import Tag from "./Tag";
 
-function CardProjeto(props) {
+function CardProjeto({ nome, imagem, descricao, tags, botao, link }) {
     return (
-        <>
-            <div className="card">
-                <div className="card-header">
-                    <img className="card-imagem" src={props.imagem} alt={props.descricao}></img>
-                </div>
+        <div className="card">
+            <div className="card-header">
+                <img className="card-imagem" src={imagem} alt={nome} />
+            </div>
 
-                <div className="card-conteudo">
-                    <h1 className="card-titulo">{props.nome}</h1>
+            <div className="card-conteudo">
+                <h2 className="card-titulo">{nome}</h2>
 
-                    <div className="card-tags">
-                        {props.tags && props.tags.map((tag) => (
-                            <Tag key={tag} nome={tag} />
-                        ))}
-                    </div>
-                </div>
+                {descricao && <p className="card-descricao">{descricao}</p>}
 
-                <div className="card-footer">
-                    <a className="card-button" href={props.link} target="_blank" rel="noopener noreferrer">{props.botao}</a>
+                <div className="card-tags">
+                    {tags && tags.map((tag) => (
+                        <Tag key={tag} nome={tag} />
+                    ))}
                 </div>
             </div>
-        </>
+
+            <div className="card-footer">
+                {link ? (
+                    <a className="card-button" href={link} target="_blank" rel="noopener noreferrer">{botao}</a>
+                ) : (
+                    <span className="card-button desativado">{botao}</span>
+                )}
+            </div>
+        </div>
     )
 }
 

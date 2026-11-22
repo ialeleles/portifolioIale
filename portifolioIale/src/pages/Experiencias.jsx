@@ -1,27 +1,28 @@
 import CardExperiencia from "../components/CardExperiencia";
+import { experiencias } from "../data/experiencias";
+import { useLang } from "../i18n/useLang";
 
 function Experiencias() {
+    const { t, tr } = useLang();
+
+    // "instituicao" pode ser texto simples ou { pt, en }
+    const texto = (v) => (v && typeof v === "object" ? tr(v) : v);
+
     return (
         <>
-            <h1 className="titulo-pages">EXPERIÊNCIAS</h1>
+            <h1 className="titulo-pages">{t.experiencias.titulo}</h1>
 
-            
-                <div className="conteudo-xps">
+            <div className="conteudo-xps">
+                {experiencias.map((x) => (
                     <CardExperiencia
-                        nome="Social Media"
-                        texto="Atuei como social media para um influenciador de jogos online, contribuindo para a criação e produção de conteúdos autorais, com foco na comunicação e no engajamento com o público."
+                        key={x.id}
+                        cargo={tr(x.cargo)}
+                        instituicao={texto(x.instituicao)}
+                        periodo={texto(x.periodo)}
+                        texto={tr(x.descricao)}
                     />
-
-                    <CardExperiencia
-                        nome="Criação de conteúdo autoral"
-                        texto="Desenvolvi conteúdos autorais sobre jogos para as plataformas YouTube e TikTok, trabalhando na produção de vídeos voltados ao público gamer."
-                    />
-
-                    <CardExperiencia
-                        nome="Fale com a tecnologia: inclusão digital para idosos do Aquarela Residencial Sênior"
-                        texto="Participei de um projeto de extensão da PUC Minas, desenvolvido em equipe, com o objetivo de promover a inclusão digital de pessoas idosas por meio do contato com a tecnologia e do incentivo à autonomia no uso de ferramentas digitais."
-                    />
-                </div>
+                ))}
+            </div>
         </>
     )
 }

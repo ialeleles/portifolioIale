@@ -1,4 +1,8 @@
+import { useLang } from "../i18n/useLang";
+
 function Cracha() {
+    const { t } = useLang();
+
     return (
         <div className="cracha">
             <div className="cracha-header">
@@ -6,26 +10,24 @@ function Cracha() {
             </div>
 
             <div className="cracha-conteudo">
-                <img className="cracha-foto" src="/ialeprofile.png" alt="Foto de identificação"></img>
+                <img className="cracha-foto" src="/ialeprofile.png" alt={t.cracha.fotoAlt} />
 
                 <div className="cracha-informacoes">
-                    <p className="cracha-titulo-info">NOME</p>
+                    <p className="cracha-titulo-info">{t.cracha.nome}</p>
                     <p className="cracha-info">Iale Leles de Almeida</p>
 
-                    <p className="cracha-titulo-info">FORMAÇÃO</p>
-                    <p className="cracha-info">Engenharia de Software, PUC Minas</p>
+                    <p className="cracha-titulo-info">{t.cracha.formacao}</p>
+                    <p className="cracha-info">{t.cracha.valorFormacao}</p>
 
-                    <p className="cracha-titulo-info">BASE</p>
-                    <p className="cracha-info">Minas Gerais, Brasil</p>
+                    <p className="cracha-titulo-info">{t.cracha.base}</p>
+                    <p className="cracha-info">{t.cracha.valorBase}</p>
 
-                    <p className="cracha-titulo-info">STATUS</p>
-                    <p className="cracha-info">Disponível</p>
+                    <p className="cracha-titulo-info">{t.cracha.status}</p>
+                    <p className="cracha-info">{t.cracha.valorStatus}</p>
                 </div>
             </div>
 
-            <div className="cracha-footer">
-
-            </div>
+            <div className="cracha-footer"></div>
         </div>
     )
 }
